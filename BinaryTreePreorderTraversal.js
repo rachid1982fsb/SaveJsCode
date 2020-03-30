@@ -1,14 +1,10 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
- * }
- */
-/**
- * @param {TreeNode} root
- * @return {number[]}
- */
+
+ function TreeNode(val) {
+     this.val = val;
+      this.left = this.right = null;
+  }
+
+  
 var preorderTraversalRecursive = function(root) {
     let result =[]
     let stackNodes=[]
