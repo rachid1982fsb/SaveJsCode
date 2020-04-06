@@ -1,5 +1,5 @@
 var maxDepth = function(root) {
-    if(!root) return []
+    if(!root) return 0
     
     let result= [[root.val]]    
     let queue = [[root]]
