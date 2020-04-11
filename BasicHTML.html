@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>My Title</title>
+	</head>
+	<body>
+		<p>This is a paragraph</p>
+	</body>
+</html>
+
+
+<!-- table -->
+<html>
+	<head>
+		<title>HTML Tables - Caption</title>
+	</head>
+	<body>
+		<table border="1">
+			<caption>This is a caption for the table</caption>
+				<tr>
+					<th rowspan="3">Header One</th>
+					<th colspan="3">Header Two</th>
+				</tr>
+			
+				<tr>
+					<td>Data One</td>
+					<td>Data Two</td>
+					<td>Data Three</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				
+		</table>
+		
+	</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Tables</title>
+	</head>
+	<body>
+		<p>Table with grouping elements thead, tbody, and tfoot</p>
+		<table border="1">
+			<thead>
+				<tr>
+					<td>Head One</td>
+					<td>Head Two</td>
+					<td>Head Three</td>
+				</tr>
+			<thead>
+			
+			<tbody>
+				<tr>
+					<td>Body One</td>
+					<td>Body Two</td>
+					<td>Body Three</td>
+				</tr>
+				<tr>
+					<td>Body Four</td>
+					<td>Body Five</td>
+					<td>Body Six</td>
+				</tr>
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<td>Foot One</td>
+					<td>Foot Two</td>
+					<td>Foot Three</td>
+				</tr>
+			</tfoot>
+			
+		</table>
+		
+	</body>
+</html>
+
+
+<!-- HTML - Lists Examples -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Tables</title>
+</head>
+<body>
+	<p>Nested List</p>
+	<ol type="i">
+		<li>Item One</li>
+		<li>Item Two</li>
+		<li>Item Three
+			<ul>
+				<li>Nested One</li>
+				<li>Nested Two</li>
+			</ul>
+		</li>
+		<li>Item Four
+			<ol type="A">
+				<li>Nested Three</li>
+			</ol>
+		</li>
+	</ol>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Tables</title>
+	</head>
+	<body>
+		<p>Unordered List</p>
+		<ul>
+			<li>Item One</li>
+			<li>Item Two</li>
+			<li>Item Three</li>
+		</ul>
+		<br/>
+		<p>Ordered List</p>
+		<ol>
+			<li>Item One</li>
+			<li>Item Two</li>
+			<li>Item Three</li>
+		</ol>
+		<br/>
+	</body>
+</html>
+
+<!-- Links -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Links</title>
+</head>
+<body>
+	<p>This paragraph has a <a href="#">link</a>.</p>
+	<a href="#findMe">Link to Div</a>
+	<!-- an example navigational list -->
+	<nav>
+		<ul>
+			<!-- Anchor inside li -->
+			<li><a href="#">Home</a></li>
+			
+			<!-- Anchor outside li -->
+			<a href="about.html"><li>About</li></a>
+		</ul>
+	</nav>
+	
+	
+	<!-- A link to an outside resource -->
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_self"> Learn More about anchor tags on Mozilla's Developer's website!</a>
+	
+	<br/><br/>
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank"> Learn Even MORE about anchor tags on Mozilla's Developer's website!</a>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<div id="findMe">
+		This is an example of an anchored element.
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Links</title>
+</head>
+<body>
+	<p>This is the About page</p>
+	
+	<!-- an example navigational list -->
+	<nav>
+		<ul>
+			<!-- Anchor inside li -->
+			<li><a href="index.html">Home</a></li>
+			
+			<!-- Anchor outside li -->
+			<a href="#"><li>About</li></a>
+		</ul>
+	</nav>
+	
+</body>
+</html>
+
+<!-- form  -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Forms</title>
+	</head>
+	<body>
+		<p>Form</p>
+		<form>
+			<input /> <!-- self-closing tag -->
+			<button type="submit">This will submit the form.</button>
+		</form>
+	</body>
+</html>
+
+
+<html>
+	<head>
+		<title>HTML Forms and Name Attribute</title>
+	</head>
+	<body>
+		<p>Form with Button</p>
+		<form method="get" action="">
+			<input type="hidden" value="12345678" />
+			<fieldset>
+				<legend>User Credentials</legend>
+				
+				<label>Username: <input type="text" name="username"/></label>
+				<label>Password: <input type="password" name="password" /></label>
+			</fieldset>
+			<br/>
+			<fieldset>
+				<legend>User Address</legend>
+				<label for="street" />Street</label>
+				<input id="street" name="address-1" type="text" />
+				<br/>
+				
+				<label for="city" />City</label>
+				<input id="city" name="address-2" type="text" />
+				<br/>
+				
+				<label for="state" />State</label>
+				<select id="state" name="state">
+					<option value="VA">VA</option>
+					<option value="MD">MD</option>
+					<option value="DC">DC</option>
+				</select>
+				<br/>
+				
+				<label for="zipcode" />Zipcode</label>
+                <input id="zipcode" name="address-4" type="text" maxlength="5"/>
+                
+                <label for="DOB" />DOB</label>
+                <input id="DOB" name="DOB" type="date" maxlength="5">
+			</fieldset>
+			<br/>
+			<label for="gender-1">Male</label>
+			<input type="radio" id="gender-1" name="gender" value="male" />
+			
+			<label for="gender-2">Female</label>
+			<input type="radio" id="gender" name="gender" value="female" />
+			
+			<input type="radio" id="gender" name="gender2" value="female" />
+			
+			<br/>
+			<label for="notifications">Receive Email Notifications</label>
+			<input type="checkbox" name="notifications" id="notifications" />
+			
+			<br/>
+			<br/>
+			<button>Button</button>
+		</form>
+	</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Forms</title>
+	</head>
+	<body>
+		<p>Form with input submit and placeholder</p>
+		<form method="post" action="">
+			<input type="hidden" value="12345678" />
+			<div>
+				<h4>User Credentials</h4>
+				
+				<input type="email" name="email" placeholder="email" required />
+				<input type="password" name="password" placeholder="password" required />
+			</div>
+			<br/>
+			<div>
+				<h4>Address</h4>
+				<input id="street" name="address-1" type="text" placeholder="street" required />
+				<br/>
+				
+				<input id="city" name="address-2" type="text" placeholder="city"required />
+				<br/>
+				
+				<label for="state" />State</label>
+				<select id="state" name="state" placeholder="State" required>
+					<option value="" disabled selected>-</option>
+					<option value="VA">VA</option>
+					<option value="MD">MD</option>
+					<option value="DC">DC</option>
+					
+				</select>
+				<br/>
+				
+				<input id="zipcode" name="address-4" type="text" maxlength="5" placeholder="zipcode" required />
+			</div>
+			<br/>
+			<label for="gender-1">Male</label>
+			<input type="radio" id="gender-1" name="gender" value="male" />
+			
+			<label for="gender-2">Female</label>
+			<input type="radio" id="gender" name="gender" value="female" />
+			
+			<br/>
+			<label for="notifications">Receive Email Notifications</label>
+			<input type="checkbox" name="notifications" id="notifications" />
+			
+			<br/>
+			<input type="submit" value="Register" />
+		</form>
+	</body>
+</html>
+
+Media Audio
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Audio</title>
+	</head>
+	<body>
+		<!--
+		<audio src="audio/notes.mp3" controls>
+			Your browser does not support audio.
+		</audio>
+		-->
+		<!-- Another way to define audio element -->
+		
+		<audio controls>
+			<source src="audio/notes.mp3" type="audio/mp3" />
+			<source src="audio/notes.ogg" type="audio/ogg" />
+		</audio>
+		
+	</body>
+</html>
+
+<!-- Image -->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Images</title>
+	</head>
+	<body>
+		<img src="images/sample-image.png" alt="Company Logo" />
+		
+		<p>	A broken linked image inside a paragraph
+			<img src="https://anyimage.com" alt="Image From Internet"/>
+		</p>
+	</body>
+</html>
+
+<!-- video -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Video</title>
+	</head>
+	<body>
+		<video src="video/ping-pong.mp4" controls
+			width="300px" height="400px"
+			 autoplay loop>
+			Your browser does not support video.
+		</video>
+	</body>
+</html>

@@ -1,3 +1,4 @@
+// this an algorith of postorderTraversal LinkLIST
 var postorderTraversal = function(root) {
     
     if(!root){
@@ -8,7 +9,7 @@ var postorderTraversal = function(root) {
     let stackNodes=[]
     let visted=[]
     let current = root 
-    
+
      stackNodes.push(current)
     
      while(stackNodes.length >0){
