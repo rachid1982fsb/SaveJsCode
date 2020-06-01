@@ -55,3 +55,35 @@ const largestValues = function(root) {
     return output
     
 };
+
+
+// better solution 
+
+const  largestValues = function(root) {
+    if (!root) {
+        return [];
+    }
+    
+    let queue = [root];
+    let largestValues = [];
+    while (queue.length) {
+        let max = queue[0].val;
+        let arr = [];
+        while (queue.length) {
+            let node = queue.shift();
+            if (max < node.val) {
+                max = node.val;
+            }
+            if (node.left) {
+                arr.push(node.left);
+            }
+
+            if (node.right) {
+                arr.push(node.right);
+            }
+        }
+        largestValues.push(max);
+        queue = arr;
+    }
+    return largestValues;
+};
