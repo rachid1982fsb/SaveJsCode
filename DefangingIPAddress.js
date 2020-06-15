@@ -28,6 +28,18 @@
 //  */
 var defangIPaddr = function(address) {
     return address.split(".").join("[.]")
+};
+
+var defangIPaddr = function(address) {
+    let result=""
+    for(i in address){
+        if(address[i]==="."){
+            result +="[.]"
+        }else{
+            result += address[i]
+        } 
+    }
     
+    return result
     
 };
